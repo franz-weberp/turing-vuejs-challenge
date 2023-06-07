@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+:root {
+  --padding: 0.5em;
+  --radius: 3px;
+  --primary-gray: #ececec;
+  --content-padding: 2em;
+  --card-padding: 1em;
+  --top-padding: 6em;
+  --container-width: 1200px;
+  --container-padding: 194px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  padding: var(--padding);
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-prm {
+  color: white;
+  background: black;
+  padding: var(--padding);
+  border-radius: var(--radius);
+}
+
+.btn-sec {
+  cursor: pointer;
+  background-color: var(--primary-gray);
+  padding: var(--padding);
+  border-radius: var(--radius);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.2em 0;
+  border-bottom: 1px solid rgb(62, 62, 62);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--container-width);
+  position: relative;
+}
+
+.nav-btns {
+  display: flex;
+  gap: var(--padding);
+  position: absolute;
+  right: 0;
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content {
+  padding: var(--content-padding);
+  width: 100%;
+  max-width: var(--container-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  padding-top: var(--top-padding);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  min-width: 30%;
+  max-width: 263px;
+  height: fit-content;
+  background-color: var(--primary-gray);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+}
+
+button:disabled {
+  opacity: 0.7;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: var(--padding)
+}
+
+.skilltag {
+  padding: 0.2em;
+  border-radius: var(--radius);
+  background-color: black;
+  color: white;
+}
+
+.skill-input {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: var(--padding);
+  gap: var(--padding);
+}
+
+.skill-input>input {
+  flex-grow: 1;
+}
+
+.message {
+  text-align: center;
+  font-size: 12px;
+}
+
+.error {
+  color: rgb(237, 80, 80);
+}
+
+.success {
+  color: rgb(0, 144, 22);
+}
+
+.cand-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.search {
+  display: flex;
+  width: min(500px, 100%);
+  gap: var(--padding);
+  justify-content: stretch;
+}
+
+.search input {
+  padding: .6em;
+  background: var(--primary-gray);
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: .8em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  padding: var(--card-padding);
+  background-color: var(--primary-gray);
+  width: 370px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card .name {
+  font-weight: 300;
+  font-size: 1.6rem;
+
+}
+
+.card p>span {
+  font-weight: bold;
+}
+
+.card .skills {
+  opacity: 0.8;
+}
+
+
+/* bootstrap classes */
+
+.w-100 {
+  width: 100%!important;
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
